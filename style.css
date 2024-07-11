@@ -34,8 +34,9 @@ b{
 }
 
 .btn{
+    font-family: Brawler;
     display: inline-block;
-    padding: 07px 16px;
+    padding: 15px 40px;
     background: #D6D4AD;
     border: none;
     cursor: pointer;
@@ -43,6 +44,13 @@ b{
     border-radius: 03px;
     color:#fff;
     transition: all 0.3;
+    margin-left:50px;
+    margin-top:30px;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* This will make the button 10% larger */
+    transition: all;
 }
 
 .clr{
@@ -96,15 +104,23 @@ b{
 .pinkbox{
     max-width: 1440px;
     margin:auto;
-    height:550px;
+    height:650px;
     margin-top:20px;
     background-color: #FFDEDE;
 }
 
 .name{
     font-family: 'Bona Nova', serif;
+    letter-spacing: 4px;
+    margin-left:10px;
+    padding: 50px;
 }
 
+#profile{
+    margin-right:50px;
+    margin-top: 110px;
+    float: right;
+}
 .showcase-content{
     padding-top: 170px;
     color: #333;
