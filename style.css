@@ -27,12 +27,6 @@ b{
     margin:auto;
 }
 
-.lead{
-    font-size: 16px;
-    padding: 10px 10px;
-    text-align: justify;
-}
-
 .btn{
     font-family: Brawler;
     display: inline-block;
@@ -56,23 +50,20 @@ b{
 .clr{
     clear: both;
 }
-
-.greenspace{
-  padding-top:70px;
-  background: #D6D4AD;
-  margin-bottom: 20px;
-}
-/* Close Utality Classes */
+/* Close Utility Classes */
 
 #navbar{
     background: #FFFFFF;
     overflow: auto;
+    border-top:20px solid #D6D4AD;
+    position: fixed;
+    top: 0px;
+    width:100%;
 }
-
 #navbar h1{
     float: left;
     font-size: 40px;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-right: 20px;
 }
 
@@ -88,6 +79,8 @@ b{
 #navbar ul li a {
   display: block;
   padding: 20px;
+  padding-top: 40px;
+
   font-size: 18px;
   text-align: center;
   transition: all 0.5s;
@@ -105,7 +98,7 @@ b{
     max-width: 1440px;
     margin:auto;
     height:650px;
-    margin-top:20px;
+    padding-top:70px;
     background-color: #FFDEDE;
 }
 
@@ -118,7 +111,7 @@ b{
 
 #profile{
     margin-right:50px;
-    margin-top: 110px;
+    margin-top: 50px;
     float: right;
 }
 .showcase-content{
@@ -131,13 +124,6 @@ b{
     margin-bottom: 20px;
  }
 
- .showcase-content .btn:hover{
-    background: #D6D4AD;
-    border: none;
-    color:#fff;
-    transition: all 0.3s;
- }
-
 /* About Section */
 
  .about{
@@ -145,9 +131,10 @@ b{
     margin-top: 40px;
  }
 
- .about h3{
+ .abouthead{
     width: 100%;
     border-bottom: 2px solid  #ddd;
+    color:#8E8B62;
  }
 
  .about h3 span{
