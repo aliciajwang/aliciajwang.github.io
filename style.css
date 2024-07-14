@@ -17,20 +17,25 @@ a{
     color: #8E8B62;
 }
 
+b{
+  text-decoration: none;
+  color: #000000;
+}
 
 .container{
+    max-width: 1440px;
     margin:auto;
 }
 
 .btn{
     font-family: Brawler;
     display: inline-block;
-    padding: 2% 4%;
+    padding: 15px 40px;
     background: #D6D4AD;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 03%;
+    border-radius: 03px;
     color:#fff;
     transition: all 0.3;
     margin-left:50px;
@@ -99,14 +104,13 @@ a{
 
 .name{
     font-family: 'Bona Nova', serif;
-    letter-spacing: 0.04em;
-    line-height: 0.5em;
-    margin-left:0.3%;
-    padding: 4%;
+    letter-spacing: 4px;
+    margin-left:10px;
+    padding: 50px;
 }
 
 #profile{
-    margin-right: 8%;
+    margin-right:50px;
     margin-top: 50px;
     float: right;
 }
