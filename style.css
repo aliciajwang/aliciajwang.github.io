@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+section{
+    height:100vh;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #8E8B62;
+    color: black;
 }
 
 b{
@@ -38,7 +42,6 @@ b{
     border-radius: 03px;
     color:#fff;
     transition: all 0.3;
-    margin-left:50px;
     margin-top:30px;
 }
 
@@ -93,150 +96,7 @@ b{
     transition: all 0.5s;
 }
 
-/* Showcase Area */
-.pinkbox{
-    max-width: 90%;
-    margin:auto;
-    height:80vh;
-    padding-top:70px;
-    background-color: #FFDEDE;
-}
-
-.name{
-    font-family: 'Bona Nova', serif;
-    letter-spacing: 4px;
-    margin-left:10px;
-    padding: 50px;
-}
-
-#profile{
-    margin-right:50px;
-    margin-top: 50px;
-    float: right;
-}
-
-.showcase-content{
-    padding-top: 170px;
-    color: #333;
-}
-
- .showcase-content p{
-    font-size: 20px;
-    margin-bottom: 20px;
- }
-
-/* About Section */
-
- .about{
-    height: 350px;
-    margin-top: 40px;
- }
-
- .abouthead{
-    width: 100%;
-    border-bottom: 2px solid  #ddd;
-    color:#8E8B62;
- }
-
- .about h3 span{
-    background:  #ddd;;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
-    display: inline-block;
- }
-/* Close */
-
-
-#services h3{
-    width: 100%;
-    border-bottom: 0.5px solid #ddd;;
- }
-
-#services h3 span{
-    background: #ddd;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
-    display: inline-block;
- }
-
- #services .box{
-    float: left;
-    width: 33.33%;
-    padding: 45px;
-    text-align: center;
-    margin: 30px 0px;
- }
-
- .bg-primary{
- background: #D6D4AD;
-    color: #fff;
- }
-
- .light-gray{
-    background: #ddd;
- }
-
- #services h2{
-  margin-bottom: 25px;
- }
-
-/* Author */
-
-#authors h3{
-    width: 100%;
-    border-bottom: 0.5px solid #ddd;;
- }
-
- #authors h3 span{
-    background: #ddd;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
-    display: inline-block;
- }
-
-#authors{
-    background: url('../img/img.jpg') no-repeat center;
-    height: 600px;
-    padding-top: 40px ;
-
- }
-
-.auth{
-    float: left;
-    height: 500px;
-    width: 33%;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin: 20px 01px;
-}
-
-.auth img{
-    border-radius: 50%;
-}
-
-.names{
-    font-weight: bold;
-    font-size: 18px;
-}
-
 /* Contact Us */
-#contact h3{
-    width: 100%;
-    border-bottom: 0.5px solid #ddd;;
-    margin-bottom: 35px;
-}
-
-#contact h3 span{
-    background: #ddd;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
-    display: inline-block;
-}
 
 #contact .form-group{
     margin-bottom: 20px;
