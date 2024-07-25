@@ -29,8 +29,9 @@ a{
 
 .container{
     margin:auto;
-    width: 80%;
+    max-width: 100%;
     justify-content: space-around;
+    overflow-x: hidden;
 }
 
 .clr{
@@ -41,6 +42,7 @@ a{
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -71,6 +73,8 @@ html{
     top: 0;
     width: 100%;
     z-index:100;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
 #navbar h1{
@@ -248,16 +252,16 @@ html{
         content: "Web Developer";
     }
     21%, 40% {
-        content: "Full Stack Developer";
-    }
-    41%, 60% {
         content: "Software Engineer";
     }
-    61%, 80% {
+    41%, 60% {
         content: "Web Developer";
     }
+    61%, 80% {
+        content: "Software Engineer";
+    }
     81%, 100% {
-        content: "Full Stack Developer";
+        content: "Web Developer";
     }
 }
 
@@ -281,13 +285,13 @@ html{
 }
 
 .about-text{
-    width: 60vh;
+    width: 50vh;
     margin-top: 8%;
 }
 
 .main{
-    width: 1130px;
-    max-width: 95%;
+    max-width: 70%;
+    width: 1530px;
     display: flex;
 }
 
@@ -503,7 +507,7 @@ p{
 
 /* Sizing */
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 940px){
     .hideOnMobile{
         display: none;
     }
@@ -511,9 +515,39 @@ p{
     .menu-button{
         display: block;
     }
+    .contain{
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+    }
 }
 
-@media only screen and (max-width: 431px){
+@media only screen and (max-width: 1100px){
+
+    .contain{
+        margin: 40px 0;
+        height: 100%;
+    }
+
+    .contain .contact{
+        flex-direction: column-reverse;
+    }
+
+    .contain .contact .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact .left-side::before{
+        display: none;
+    }
+
+    .contain .contact .right-side{
+        width: 90%;
+        margin-left: 0;
+    }
 
     #about img{
         height: 38vh;
