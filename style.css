@@ -16,7 +16,9 @@ section{
 body{
     font-family: Brawler;
     line-height: 2.2em;
-
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
 
 a{
