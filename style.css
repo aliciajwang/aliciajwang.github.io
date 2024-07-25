@@ -115,7 +115,7 @@ html{
     width: 250px;
     z-index: 999;
     box-shadow: -10px 0 10px #b8b6b6;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(20px);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -132,22 +132,6 @@ html{
 
 .menu-button{
     display: none;
-}
-
-@media(max-width: 900px){
-    .hideOnMobile{
-        display: none;
-    }
-
-    .menu-button{
-        display: block;
-    }
-}
-
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
 }
 /* Home page */
 
@@ -213,7 +197,7 @@ html{
     padding: 1rem 2.8rem;
     box-shadow: 0 0 25px #D6D4AD;
     background-color: #D6D4AD;
-    font-size: 1.5rem;
+    font-size: clamp(20px, 1rem + 0.7vw, 100px);
     border-radius: 4rem;
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
@@ -311,7 +295,7 @@ html{
 
 h2{
     color:#8E8B62;
-    font-size: 3rem;
+    font-size: clamp(2px, 1rem + 1vw, 100px);
     letter-spacing: 2px;
     margin-bottom: 3%;
 }
@@ -320,7 +304,7 @@ p{
     color: black;
     letter-spacing: 2px;
     line-height: 1.7rem;
-    font-size: 1rem;
+    font-size: clamp(2px, 0.9rem + 0.02vw, 100px);
     margin-bottom: 2rem;
 }
 
@@ -333,7 +317,7 @@ p{
 }
 
 .skill-name{
-    font-size: 1.5rem;
+    font-size: clamp(2px, 0.5rem + 1.5vw, 100px);
     font-weight: 700;
     letter-spacing: 2px;
     color: #51531b;
@@ -366,7 +350,7 @@ p{
     background: #f1f1f1;
     border-radius: 20rem;
     border: 2px solid #8E8B62; 
-    font-size: 1.1rem;
+    font-size: clamp(2px, 0.5rem + 1vw, 100px);
     top: -1rem;
     right: 0;
     transform: translateX(50%);
@@ -405,3 +389,48 @@ p{
 }
 
 /* Sizing */
+
+@media only screen and (max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 431px){
+
+    #about img{
+        height: 38vh;
+        width: 30vh;
+    }
+
+    .main{
+        width: 300px;
+        display: grid;
+    }
+
+    .skills{
+        width: 300px;
+    }
+
+    p{
+        margin-right: 12rem;
+    }
+    .socials a{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .btn{
+        width: 8rem;
+        border-radius: 4rem;
+        padding: 0.5rem 6%;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+}
