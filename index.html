@@ -10,128 +10,142 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Alicia's Personal Website</title>
   </head>
   <body>
-    <header>
+    <div class="element">
       <!-- Navbar -->
-      <nav id="navbar">
+        <nav id="navbar">
+          <div class="container">
+            <h1><a href="#" style="color: #8E8B62;">My Personal Website</a></h1>
+            <ul>
+              <li><a href="#home" class="current">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact" style="color: #8E8B62;"> Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+      <!-- Home Page --> 
+      <section id="home">
+        <div class="container home-content">
+          <h2 class="hi">Hi,</h2>
+          <h1><span class="im">I'm</span> Alicia Wang</h1>
+          <h3 class="text-animation"> I'm a <span></span></h3>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/alicia-wang-7411bb26b/" target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+            <a href="https://www.instagram.com/aliciajwang/" target="_blank">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+            <a href="https://github.com/aliciajwang" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>            
+          <div class="btn-group">
+            <a href="https://drive.google.com/file/d/1Jsfd3WrnEcHApAOi3BO3_eOPY9DcyxL9/view?usp=sharing" class="btn">Resume</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About --> 
+      <section id="about">
+        <div class="container reveal main">
+          <img id="profile" src="profile.jpg">
+          <div class="about-text">
+            <h2>about </h2><hr width="500vh" size="5">
+            <p>
+              I am Alicia Wang, a rising sophomore at the University of Maryland, College Park, pursuing a Bachelor of Science in Computer Science with a minor in Statistics. 
+              My academic interests include software development, data analytics, and web development.
+            </p>
+            <p>
+              In 2023, I received the National Center for Women & Information Technology (NCWIT) Honorable Mention Award, recognizing my aspirations and achievements as a woman in tech. 
+              Alongside NCWIT, I have been active in CodePath, where I have further honed my coding skills and engaged with a community of like-minded individuals passionate about technology and innovation.
+            </p>
+            <p>
+              As an incoming Software Engineering Fellow for Headstarter AI, I look forward to further developing my skills and making a meaningful impact in the tech industry. 
+              My dedication to promoting diversity and inclusion in technology drives me to continuously push the boundaries of what is possible.  
+            </p>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills --> 
+      <section id="skills">
+        <div class="skills reveal">
+          <div class = "skill">
+            <h2>my skills</h2><hr width="700vh" size="5">
+            <div class="skill-name">HTML/CSS</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="85%" style="max-width: 85%"></div>
+            </div>
+          </div>
+
+          <div class = "skill">
+            <div class="skill-name">Java</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="80%" style="max-width: 80%"></div>
+            </div>
+          </div>
+
+          <div class = "skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="70%" style="max-width: 70%"></div>
+            </div>
+          </div>
+
+          <div class = "skill">
+            <div class="skill-name">C</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="65%" style="max-width: 65%"></div>
+            </div>
+          </div>
+
+          <div class = "skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="50%" style="max-width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="skills reveal">
+          <div class = "contact">
+            <h2>contact me</h2><hr width="500vh" size="5">
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="main-footer">
         <div class="container">
-          <h1><a href="#">My Personal Website</a></h1>
-          <ul>
-            <li><a href="index.html" class="current" style="color: black;">Home</a></li>
-            <li><a href="about.html" style="color: black;">About</a></li>
-            <li><a href="skills.html" style="color: black;">Skills</a></li>
-            <li><a href="timeline.html" style="color: black;">Timeline</a></li>
-            <li><a href="contact.html"> Contact</a></li>
-          </ul>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/alicia-wang-7411bb26b/" target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+            <a href="https://www.instagram.com/aliciajwang/" target="_blank">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+            <a href="https://github.com/aliciajwang" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+          </div>        
+          <p>&copy; 2024 Alicia Wang</p>
         </div>
-      </nav>
-      <div style="padding:70px; background-color:white;"></div>
-      <!-- Main Pink Body Showcase Area -->
-      <div class="pinkbox" style="display: grid; grid-template-columns: auto auto;">
-        <div class="showcase-content">
-          <h1 class="name" style="color: white; font-size:110px; margin-top: -130px;">Welcome!</h1>
-          <h1 class="name" style="font-size:100px; color: white" >I'm <span style="font-size:120px; color: #8E8B62">Alicia Wang</span></h1>
-          <button class="btn" style="font-size:25px">Download Resume</button>
-          <p style="margin-left: 50px; padding-top: 20px">*This website is still under maintenance*</p>
-        </div>
-        <div> 
-          <img id="profile" src="profile.jpg" style="width:410px;height:410px;">
-        </div>
-      </div>
-    </header>
+      </footer>
 
-    <!-- About Me Section -->
-    <section class="about">
-      <div class="container">
-        <h2 class="abouthead"><span>About Me</span></h2>
-        <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi beatae nobis officiis illum
-          quo eum deserunt fuga numquam! Provident sint iusto, doloremque quae consectetur ipsa
-          harum minus enim in possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quasi beatae nobis officiis illum quo eum deserunt fuga numquam! Provident sint iusto,
-          doloremque quae consectetur ipsa harum minus enim in possimus. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Quasi beatae nobis officiis illum quo eum deserunt fuga
-          numquam! Provident sint iusto, doloremque quae consectetur ipsa harum minus enim in
-          possimus.
-        </p>
-        <p class="lead">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique debitis neque
-          exercitationem. A, consequatur magnam asperiores impedit adipisci perferendis ab aperiam!
-          Voluptatum ducimus ratione maiores. Et ut maxime accusamus mollitia. Lorem ipsum dolor,
-          sit amet consectetur adipisicing elit. Iusto, fuga. Voluptatibus, tenetur veritatis
-          ratione tempore optio quas debitis quis accusamus culpa maiores dolor facilis obcaecati
-          aspernatur suscipit cupiditate perspiciatis minus?
-        </p>
-      </div>
-    </section>
-    <!-- Our Services -->
-    <div id="services">
-      <div class="container">
-        <h3 class="bg-dark-line"><span>HeHe</span></h3>
-        <div class="box bg-primary">
-          <h2>hehe</h2>
-          <i class="fa-solid fa-paintbrush fa-4x"></i>
-          <p class="lead">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam iusto, pariatur sint
-            culpa vero impedit ex tenetur doloremque, nihil corrupti, amet soluta? Earum, quidem
-            culpa.
-          </p>
-        </div>
-        <div class="box light-gray">
-          <h2>hehe</h2>
-          <i class="fa-solid fa-code fa-4x"></i>
-          <p class="lead">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam iusto, pariatur sint
-            culpa vero impedit ex tenetur doloremque, nihil corrupti, amet soluta? Earum, quidem
-            culpa.
-          </p>
-        </div>
-        <div class="box bg-primary">
-          <h2>hehe</h2>
-          <i class="fa-solid fa-desktop fa-4x"></i>
-          <p class="lead">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam iusto, pariatur sint
-            culpa vero impedit ex tenetur doloremque, nihil corrupti, amet soluta? Earum, quidem
-            culpa.
-          </p>
-        </div>
-      </div>
     </div>
-
-    <div class="clr"></div>
-
-    <!-- Contact -->
-    <div id="contact">
-      <div class="container">
-        <h3><span>Contact Me</span></h3>
-        <div class="contact-form">
-          <form action="process.php">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" name="name" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="name" />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
-            <button type="button" class="btn">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <footer id="main-footer">
-      <div class="container">
-        <p>
-          Alicia Wang
-          <a href="https://onlineittuts.com"> </a> &copy 2024
-        </p>
-      </div>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

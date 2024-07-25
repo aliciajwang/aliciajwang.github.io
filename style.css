@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+section{
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+    align-content:center;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,52 +21,55 @@ body{
 
 a{
     text-decoration: none;
-    color: #8E8B62;
-}
-
-b{
-  text-decoration: none;
-  color: #000000;
+    color: black;
 }
 
 .container{
-    max-width: 1440px;
     margin:auto;
-}
-
-.btn{
-    font-family: Brawler;
-    display: inline-block;
-    padding: 15px 40px;
-    background: #D6D4AD;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 03px;
-    color:#fff;
-    transition: all 0.3;
-    margin-left:50px;
-    margin-top:30px;
-}
-
-.btn:hover {
-    transform: scale(1.1); /* This will make the button 10% larger */
-    transition: all;
+    width: 70%;
+    justify-content: space-around;
 }
 
 .clr{
     clear: both;
+}
+
+/* Animations */
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background: #e8f2ff;
+  display: none;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
 /* Close Utility Classes */
 
 #navbar{
     background: #FFFFFF;
     overflow: auto;
+    letter-spacing: 2px;
     border-top:20px solid #D6D4AD;
+    border-bottom: 1px solid #8E8B62; 
     position: fixed;
-    top: 0px;
-    width:100%;
+    top: 0;
+    width: 100%;
+    z-index:100;
 }
+
 #navbar h1{
     float: left;
     font-size: 40px;
@@ -93,176 +103,250 @@ b{
     transition: all 0.5s;
 }
 
-/* Showcase Area */
-.pinkbox{
-    max-width: 1440px;
-    margin:auto;
-    height:650px;
-    padding-top:70px;
-    background-color: #FFDEDE;
+/* Home page */
+
+#home{
+    display: flex;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 5rem;
+    color: #8E8B62;
 }
 
-.name{
-    font-family: 'Bona Nova', serif;
-    letter-spacing: 4px;
-    margin-left:10px;
-    padding: 50px;
+.home-content h3{
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
 }
 
-#profile{
-    margin-right:50px;
-    margin-top: 50px;
-    float: right;
-}
-.showcase-content{
-    padding-top: 170px;
-    color: #333;
+.hi{
+    color: #51531b;
+    font-size: 4rem;
 }
 
- .showcase-content p{
-    font-size: 20px;
-    margin-bottom: 20px;
- }
-
-/* About Section */
-
- .about{
-    height: 350px;
-    margin-top: 40px;
- }
-
- .abouthead{
-    width: 100%;
-    border-bottom: 2px solid  #ddd;
-    color:#8E8B62;
- }
-
- .about h3 span{
-    background:  #ddd;;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
-    display: inline-block;
- }
-/* Close */
-
-
-#services h3{
-    width: 100%;
-    border-bottom: 0.5px solid #ddd;;
- }
-
-#services h3 span{
-    background: #ddd;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
-    display: inline-block;
- }
-
- #services .box{
-    float: left;
-    width: 33.33%;
-    padding: 45px;
-    text-align: center;
-    margin: 30px 0px;
- }
-
- .bg-primary{
- background: #D6D4AD;
-    color: #fff;
- }
-
- .light-gray{
-    background: #ddd;
- }
-
- #services h2{
-  margin-bottom: 25px;
- }
-
-/* Author */
-
-#authors h3{
-    width: 100%;
-    border-bottom: 0.5px solid #ddd;;
- }
-
- #authors h3 span{
-    background: #ddd;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
-    display: inline-block;
- }
-
-#authors{
-    background: url('../img/img.jpg') no-repeat center;
-    height: 600px;
-    padding-top: 40px ;
-
- }
-
-.auth{
-    float: left;
-    height: 500px;
-    width: 33%;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin: 20px 01px;
+.home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 1.7rem;
+    line-height: 1;
 }
 
-.auth img{
+.home-content .im{
+    font-size: 4rem;
+}
+
+.socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    width:4.5rem;
+    height:4.5rem;
+    border: 2px solid #8E8B62;
+    font-size: 2.5rem;
     border-radius: 50%;
+    margin: 3rem 1rem 1rem 0;
+    transition: 0.3s ease-in-out;
+    color: #D6D4AD;
+    background-color: #8E8B62;
 }
 
-.names{
-    font-weight: bold;
-    font-size: 18px;
+.socials a:hover{
+    transform: scale(1.3)translateY(-5px);
+    color: #D6D4AD;
+    box-shadow: 0 0 25px #8E8B62;
+    background-color: #8E8B62;
 }
 
-/* Contact Us */
-#contact h3{
-    width: 100%;
-    border-bottom: 0.5px solid #ddd;;
-    margin-bottom: 35px;
-}
-
-#contact h3 span{
-    background: #ddd;
-    padding: 10px 22px;
-    color: #333;
-    text-align: center;
+.btn{
+    font-family: Brawler;
+    color:#FFFFFF;
+    margin-top:30px;
     display: inline-block;
+    padding: 1rem 2.8rem;
+    box-shadow: 0 0 25px #D6D4AD;
+    background-color: #D6D4AD;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-#contact .form-group{
-    margin-bottom: 20px;
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px #D6D4AD;
 }
 
-.contact-form label{
-    display: block;
-    margin-bottom: 5px;
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
 }
 
-.contact-form input{
+.text-animation span {
+    position: relative;
+    white-space: nowrap;
+}
+
+.text-animation span::before {
+    content: "Software Engineer";
+    color: #51531b;
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: #FFFFFF;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #FFFFFF;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid hsl(56, 18%, 47%);
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Web Developer";
+    }
+    21%, 40% {
+        content: "Full Stack Developer";
+    }
+    41%, 60% {
+        content: "Software Engineer";
+    }
+    61%, 80% {
+        content: "Web Developer";
+    }
+    81%, 100% {
+        content: "Full Stack Developer";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+
+/* About Me */
+
+#about img{
+    height: 66vh;
+    width: 50vh;
+    -webkit-user-drag: none;
+    margin-top: 9%;
+}
+
+.about-text{
+    width: 60vh;
+    margin-top: 8%;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+}
+
+h2{
+    color:#8E8B62;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 3%;
+}
+
+p{
+    color: black;
+    letter-spacing: 2px;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* My Skills*/
+
+.skills{
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    max-width: 100vh;
+    padding: 0;
 }
 
-#contact textarea{
-    height: 200px;
-    width: 100%;
+.skill-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #51531b;
+    margin: 14px 0;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus{
-    outline: none;
-    border-color: #D6D4AD;
+.skill-bar{
+    height: 2rem;
+    border: 2px solid #8E8B62;
+    background: #f1f1f1;
+    border-radius: 20rem;
 }
 
+.skill-per{
+    height: 1.75rem;
+    background: #D6D4AD;
+    position: relative;
+    border-radius: 20rem;
+}
+
+.skill-per.animate{
+    animation: fillBars 3.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 0.5rem 0.5rem;
+    letter-spacing: 1px;
+    background: #f1f1f1;
+    border-radius: 20rem;
+    border: 2px solid #8E8B62; 
+    font-size: 1.1rem;
+    top: -1rem;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 0.01rem;
+    height: 0.1rem;
+    background: #8E8B62;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+/* Contact Us */
 
 /* Footer */
 
