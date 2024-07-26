@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 section{
-    min-height:100vh;
-    display:grid;
-    place-items:center;
-    align-content:center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
 }
 
 *{
@@ -14,7 +14,7 @@ section{
 }
 
 body{
-    font-family: Brawler;
+    font-family: 'Poppins', sans-serif;
     line-height: 2.2em;
     width: 100%;
     height: 100%;
@@ -28,10 +28,10 @@ a{
 }
 
 .container{
-    margin:auto;
-    max-width: 100%;
+    margin: auto;
+    width: 80%;
     justify-content: space-around;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .clr{
@@ -67,12 +67,12 @@ html{
     background: #FFFFFF;
     overflow: auto;
     letter-spacing: 2px;
-    border-top:20px solid #D6D4AD;
+    border-top: 20px solid #D6D4AD;
     border-bottom: 1px solid #8E8B62; 
     position: fixed;
     top: 0;
     width: 100%;
-    z-index:100;
+    z-index: 100;
     padding-left: 9%;
     padding-right: 9%;
 }
@@ -135,6 +135,7 @@ html{
 .menu-button{
     display: none;
 }
+
 /* Home page */
 
 #home{
@@ -172,9 +173,9 @@ html{
 .socials a{
     display: inline-flex;
     justify-content: center;
-    align-items:center;
-    width:4.5rem;
-    height:4.5rem;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
     border: 2px solid #8E8B62;
     font-size: 2.5rem;
     border-radius: 50%;
@@ -185,15 +186,15 @@ html{
 }
 
 .socials a:hover{
-    transform: scale(1.3)translateY(-5px);
+    transform: scale(1.3) translateY(-5px);
     color: #D6D4AD;
     box-shadow: 0 0 25px #8E8B62;
     background-color: #8E8B62;
 }
 
 .btn {
-    color:#FFFFFF;
-    margin-top:30px;
+    color: #FFFFFF;
+    margin-top: 30px;
     display: inline-block;
     padding: 1rem 2.8rem;
     box-shadow: 0 0 25px #D6D4AD;
@@ -274,7 +275,6 @@ html{
     }
 }
 
-
 /* About Me */
 
 #about img{
@@ -285,18 +285,18 @@ html{
 }
 
 .about-text{
-    width: 50vh;
+    width: 60vh;
     margin-top: 8%;
 }
 
 .main{
-    max-width: 70%;
-    width: 1530px;
+    width: 1130px;
+    max-width: 95%;
     display: flex;
 }
 
 h2{
-    color:#8E8B62;
+    color: #8E8B62;
     font-size: clamp(2px, 1rem + 1vw, 100px);
     letter-spacing: 2px;
     margin-bottom: 3%;
@@ -378,11 +378,12 @@ p{
         width: 100%;
     }
 }
+
 /* Contact Us */
 
 .contain{
     width: 80%;
-    background:#ebebe2;
+    background: #ebebe2;
     border-radius: 6px;
     padding: 20px 60px 40px 40px;
 }
@@ -414,7 +415,6 @@ p{
     top: 50%;
     transform: translateY(-50%);
     background: #51531b;
-
 }
 
 .contact .left-side .details{
@@ -445,7 +445,7 @@ p{
     margin-top: 45px;
     font-size: 2rem;
     font-weight: 600;
-    color:#51531b;
+    color: #51531b;
 }
 
 .right-side p{
@@ -460,7 +460,7 @@ p{
     color: #51531b;
     font-size: 16px;
     outline: none;
-    background:#F0F1F8;
+    background: #F0F1F8;
     border-radius: 6px;
     padding: 10px 15px;
     margin-bottom: 6px;
@@ -472,14 +472,15 @@ p{
     display: inline-block;
     margin-top: 12px;
 }
+
 .input-box textarea{
     height: 200px;
     margin-top: 6px;
 }
 
 .button input[type="button"]{
-    color:#FFFFFF;
-    margin-top:6px;
+    color: #FFFFFF;
+    margin-top: 6px;
     display: inline-block;
     padding: 0.5rem 2rem;
     box-shadow: 0 0 25px #D6D4AD;
@@ -497,6 +498,7 @@ p{
     transform: scale(1.1);
     box-shadow: 0 0 50px #D6D4AD;
 }
+
 /* Footer */
 
 #main-footer{
@@ -518,6 +520,99 @@ p{
     .contain{
         width: 90%;
         padding: 30px 35px 40px 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #navbar ul {
+        float: none;
+        text-align: center;
+    }
+
+    #navbar ul li {
+        float: none;
+        display: inline-block;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .home-content h3,
+    .home-content h1,
+    .home-content .im {
+        text-align: center;
+        font-size: clamp(20px, 1rem + 2vw, 100px);
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+    .socials a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: auto;
+        padding: 0.5rem 1.5rem;
+    }
+
+    #about img {
+        height: 50vh;
+        width: 90%;
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .contain .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contain .contact .left-side {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .contact .left-side::before {
+        display: none;
+    }
+
+    .contain .contact .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-side .topic-text {
+        font-size: 1.5rem;
+    }
+
+    .input-box input,
+    .input-box textarea {
+        font-size: 14px;
+    }
+
+    .button input[type="button"] {
+        padding: 0.5rem 1.5rem;
+        font-size: clamp(14px, 0.8rem + 0.2vw, 100px);
     }
 }
 
